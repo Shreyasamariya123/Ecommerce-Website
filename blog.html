@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <style>
+      .normal {
+        font-size: 14px;
+        font-weight: 600px;
+        padding: 15px 30px;
+        color: black;
+        background-color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        transition: 0.2s ease;
+        outline: none;
+      }
+      .normal:hover {
+        background-color: #088178;
+        color: #fff;
+      }
+      .banner-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        align-items: flex-start;
+        background-image:url(images/b17.jpg);
+        min-width: 580px; ; 
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+      }
+      .white{
+        font-size: 13px;
+        font-weight: 600px;
+        padding: 11px 18px;
+        color: #fff;
+        background-color:transparent;
+        cursor: pointer;
+        border: 1px solid #fff;
+        transition: 0.2s ease;
+        outline: none;
+      }
+      #banner3 .bannerbox{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       margin-bottom: 20px;
+       align-items: flex-start;
+       background-image:url(images/b7.jpg);
+       min-width:30% ; 
+       height: 30vh;
+       background-size: cover;
+       background-position: center;
+       padding: 20px;
+    }
+    #banner3 h2{
+      font-weight: 900;
+      font-size: 22px;
+    }  
+    #banner3 h3{
+      font-weight: 800;
+      font-size: 15px;
+    }
+    #banner3{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 80px;
+    }
+    .bannerbox2{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+      align-items: flex-start;
+      background-image:url(images/b4.jpg);
+      min-width:30% ; 
+      height: 30vh;
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+    }
+    .bannerbox3{
+       background-image: url(images/b18.jpg);
+        display: flex;
+      justify-content: center;
+       flex-direction: column;
+       margin-bottom: 20px;
+       align-items: flex-start;
+       min-width:30% ; 
+       height: 30vh;
+       background-size: cover;
+       background-position: center;
+      padding: 20px;
+    }
+    #newsletter h2{
+      padding-top: 20px;
+      padding-left: 20px;
+      }
+  .logo{
+  margin-bottom: 20px;
+   }
+.blog-box{
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  position: relative;
+  padding-bottom: 90px;
+}
+#blog{
+  padding: 150px 150px 0 150px;
+ }
+
+.blog-img{
+  width: 50%;
+  margin-right: 40px;
+}
+#blog img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+}
+
+.blogdetails{
+  width: 50%;
+ 
+}
+
+.blogdetails a{
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700px;
+  color: #020201;
+  position: relative;
+  transition: 0.2s;
+}
+.blogdetails a::after{
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 4px;
+  right:-60px;
+}
+
+.blogdetails a:hover{
+  color: #088178;
+}
+.blogdetails a:hover::after{
+    background-color: #088178;
+}
+.blog-box h1{
+    position: absolute;
+    top:-40px ;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color:gray;
+    z-index: -9;
+}
+
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"
+        ><img
+          src="images/CARTIQUE__1___1_-removebg-preview (1).png"
+          height="80px"
+          width="120px"
+      /></a>
+      <div>
+        <ul id="navbar">
+          <li><a  href="index.html" class="">Home</a></li>
+          <li><a href="shop.html" class="" target="_blank">Shop</a></li>
+          <li><a class="active"href="blog.html" class="" target="_blank">Blog</a></li>
+          <li><a href="about.html" class="" target="blank">About</a></li>
+          <li><a href="contact.html" class="" target="_blank">Contact</a></li>
+          <li><a href="logout.php" class="" target="blank">Logout</a></li>
+          <li id="lg-bag">
+            <a href="cart.html" class="">
+              <i class="fas fa-shopping-bag"></i
+            ></a>
+          </li>
+          <a href="#" id="close"><i class="fas fa-times"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html" class="">
+          <i class="fas fa-shopping-bag"></i
+        ></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    
+          
+      </div>
+    </section>
+    <section id="page-header" class="blog-header">
+      
+      <h2>#Read More</h2>
+      <p>Read all case studies about our products!</p>
+      
+    </section>
+    <section id="blog">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/b1 (1).jpg" alt="">
+            </div>
+            <div class="blogdetails">
+                <h4>How to Style a Quiff</h4>
+                <p>Kickstart man braid godard coloring book.Raclette waistcoat selfies yrwolf chartreuse hexagon irony,guard....</p>
+                <a href="#"><strong>CONTINUE Reading</strong></a>
+            </div>
+            <!-- <h1>13/01</h1> -->
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/b2 (1).jpg" alt="">
+            </div>
+            <div class="blogdetails">
+                <h4>Must-Have Skater Girl Items</h4>
+                <p>Kickstart man braid godard coloring book.Raclette waistcoat selfies yrwolf chartreuse hexagon irony,guard....</p>
+                <a href="#"><strong>CONTINUE Reading</strong></a>
+            </div>
+            <!-- <h1>13/01</h1> -->
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/b3.jpg" alt="">
+            </div>
+            <div class="blogdetails">
+                <h4>Runaway-Inspired Trends</h4>
+                <p>Kickstart man braid godard coloring book.Raclette waistcoat selfies yrwolf chartreuse hexagon irony,guard....</p>
+                <a href="#"><strong>CONTINUE Reading</strong></a>
+            </div>
+            <!-- <h1>13/01</h1> -->
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/b4 (1).jpg" alt="">
+            </div>
+            <div class="blogdetails">
+                <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
+                <p>Kickstart man braid godard coloring book.Raclette waistcoat selfies yrwolf chartreuse hexagon irony,guard....</p>
+                <a href="#"><strong>CONTINUE Reading</strong></a>
+            </div>
+            <!-- <h1>13/01</h1> -->
+        </div>
+    </section>
+    <section id="pagenation" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fas fa-arrow-right"></i></a>
+
+    </section>
+    <section id="newsletter">
+      <div class="newspaper">
+        <h2 style="color: blanchedalmond;">Sign Up For Newsletter</h2>
+        <p>Get E-mail updates about our latest shop <span style="color:gold;">special offers</span></p>
+      </div>
+      <div class="form">
+        <input type="email" placeholder="Your Email Address">
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+   <footer class="section-p1">
+      <div class="colimg">
+      <img src="images/CARTIQUE__1___1_-removebg-preview (1).png" alt="" height="80px" width="120px" style="margin-top:0;">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong>562 Wellington Road, Street 32,San Francisco</p>
+      <p><strong>Phone:</strong> +01 2222 365/ (+91) 01 2345 6789</p>
+      <p><strong>Hours:</strong> 10:00-1800 , Mon - Sat</p>
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook-f" style="color: blue;"></i>
+          <i class="fab fa-twitter" style="color: cornflowerblue;"></i>
+          <i class="fab fa-instagram" style="color: rgba(211, 28, 187, 0.911);"></i>
+          <i class="fab fa-pinterest-p" style="color: red;"></i>
+          <i class="fab fa-youtube" style="color: red;"></i>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="about.html" class="">About Us</a>
+        <a href="#" class="">Delivery Information</a>
+        <a href="#" class="">Privacy Policy</a>
+        <a href="#" class="">Terms and Condition</a>
+        <a href="contact.html" class="">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="login.html" class="">Sign In</a>
+        <a href="cart.html" class="">View Cart</a>
+        <a href="#" class="">My Wishlist</a>
+        <a href="#" class="">Track My Order</a>
+        <a href="contact.html" class="">Help</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store OR Google Play</p>
+        <div class="app">
+         <a href="https://www.apple.com/in/store" class="" target="_blank"><img src="images/app.jpg" alt="" style="border: 1px solid black;" ></a>
+        <a href="https://play.google.com/store/apps?utm_source=apac_med&hl=en-IN&utm_medium=hasem&utm_content=Oct0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-ap-Evergreen-Oct0121-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700064490253544_creativeid_480915691381_device_c&gclid=Cj0KCQjw3JanBhCPARIsAJpXTx4OUcIiUCyM6zJ1X0amBDmMgZEwJhEE5ELYZLyhCFOBZTRw479BufsaAu3GEALw_wcB&gclsrc=aw.ds&pli=1" class="" target="blank"><img src="images/play.jpg" alt="" style="border: 1px solid black;"></a>
+      </div>
+      </div>
+       <div>
+          <p>Secured Payment Gateways</p>
+          <img src="images/pay.png" alt="">
+      </div>
+   </footer>
+   <p> <center>© 1996-2023, Cartique.com, Inc. or its affiliates</center></p> 
+    <script src="script.js"></script>
+  </body>
+</html>
